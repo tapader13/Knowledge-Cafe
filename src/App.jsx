@@ -44,15 +44,15 @@ function App() {
   return (
     <div className='w-[80%] mx-auto'>
       <Header />
-      <div className='grid grid-cols-12 gap-5'>
-        <div className='col-span-9'>
+      <div className='grid sm:grid-cols-12 grid-cols-1 gap-5'>
+        <div className='sm:col-span-9 order-2 sm:order-1'>
           <Blogs
             blogs={blogs}
             handleBookMarks={handleBookMarks}
             handleTime={handleTime}
           />
         </div>
-        <div className='col-span-3'>
+        <div className='sm:col-span-3 order-1 sm:order-2'>
           <h3 className='text-[#6047ec] bg-[#6047ec]/10 p-2 text-center font-medium'>
             Spent time on read : {time} min
           </h3>
